@@ -41,7 +41,9 @@ export default function AppBar() {
               borderRadius: 20,
               display: "flex",
               justifyContent: "space-between",
-              alignItems: "center"
+              alignItems: "center",
+              paddingRight: "3em",
+              paddingLeft: "3em"
             }}
           >
             {/* first card */}
@@ -52,8 +54,8 @@ export default function AppBar() {
                 justifyContent: "center",
                 alignItems: "center",
                 width: "16%",
-                boxShadow: "9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px  rgba(255,255,255, 0.5)",
-                // boxShadow: "rgba(100,100,111,0.2) 0px 7px 29px 0px",
+                // boxShadow: "9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px  rgba(255,255,255, 0.5)",
+                boxShadow: "rgba(100,100,111,0.2) 0px 7px 29px 0px",
                 //boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
                 padding: matchesSM ? "3em 1em" : "0.2em 0",
                 backgroundColor: "#F6F5FA",
