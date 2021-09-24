@@ -24,7 +24,7 @@ import profile from './assets/profile.jpg';
 import logo from './assets/ed.png';
 import map from './assets/map.png';
 import hi from './assets/hi.gif';
-import location from './assets/location.jpg';
+import location from './assets/locationpin.png';
 import book from './assets/book.png';
 import LegendToggleIcon from '@mui/icons-material/LegendToggle';
 import {
@@ -143,26 +143,45 @@ export default function App() {
                   />
                 </div>
               </Grid>
-              <Grid item>
+              <Grid
+                item
+                style={{
+                  // display: 'flex',
+                  // justifyContent: 'center',
+                  // alignItems: 'center',
+                  // margin: '1em 0px',
+                  // overflow: 'hidden',
+                  position: 'relative',
+                }}
+              >
                 {' '}
                 {/* second image div */}
                 <div
                   style={{
                     display: 'flex',
                     justifyContent: 'center',
-                    alignItems: 'start',
+                    alignItems: 'center',
                     margin: '1em 0px',
                     overflow: 'hidden',
+                    // position: "relative"
                   }}
                 >
                   <span>
                     <img
                       src={location}
                       style={{
+                        position: 'absolute',
+                        left: '-24px',
+                        top: '0px',
+                        color: 'red',
+                        zIndex: 9999,
+                        backgroundColor: 'red',
+                        // transform: "translateX",
                         // border: "3px solid white",
                         // borderRadius: 20,
-                        width: '50px',
-                        height: '50px',
+                        transform: 'rotate(-55deg)',
+                        width: '30px',
+                        height: '30px',
                       }}
                     />
                   </span>
@@ -250,7 +269,15 @@ export default function App() {
                   }}
                 >
                   <div style={{ paddingLeft: '0.5em' }}>
-                    <GitHubIcon style={{ fontSize: '2em', color: '#DADEE1' }} />
+                    <a
+                      style={{ textDecoration: 'none' }}
+                      target="_blank"
+                      href="https://github.com/"
+                    >
+                      <GitHubIcon
+                        style={{ fontSize: '2em', color: '#DADEE1' }}
+                      />
+                    </a>
                   </div>
                   <div
                     style={{
@@ -260,9 +287,15 @@ export default function App() {
                       alignItems: 'flex-end',
                     }}
                   >
-                    <LinkedInIcon
-                      style={{ fontSize: '2em', color: '#DADEE1' }}
-                    />
+                    <a
+                      style={{ textDecoration: 'none' }}
+                      target="_blank"
+                      href="https://linkedin.com/"
+                    >
+                      <LinkedInIcon
+                        style={{ fontSize: '2em', color: '#DADEE1' }}
+                      />
+                    </a>
                   </div>
                 </div>
               </Grid>
