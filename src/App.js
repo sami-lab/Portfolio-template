@@ -18,6 +18,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AppBar from './pages/AppBar';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import Resume from './pages/resume';
+
 import profile from './assets/profile.jpg';
 import logo from './assets/ed.png';
 import map from './assets/map.png';
@@ -35,7 +37,7 @@ import {
 
 export default function App() {
   const theme = useTheme();
-  const matchesSM = useMediaQuery(theme.breakpoints.down('md'));
+  const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
@@ -314,9 +316,9 @@ export default function App() {
             </Route>
 
             <Route path="/resume">
-              <h1>Resume route</h1>
+              <Resume />
             </Route>
-
+            
             <Route path="*">
               <h1>not found</h1>
             </Route>
