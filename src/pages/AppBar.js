@@ -132,7 +132,6 @@ export default function AppBar(props) {
                 <Link to="/about" style={{ textDecoration: 'none' }}>
                   About
                 </Link>
-                {/* About */}
               </Typography>
             </Card>
 

@@ -14,12 +14,14 @@ import {
 } from '@mui/material';
 import Skills from './pages/skills';
 import Project from './pages/project';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AppBar from './pages/AppBar';
-
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import profile from './assets/profile.jpg';
 import logo from './assets/ed.png';
 import map from './assets/map.png';
-import hand from './assets/hand.gif';
+import hi from './assets/hi.gif';
 import location from './assets/location.jpg';
 import book from './assets/book.png';
 import LegendToggleIcon from '@mui/icons-material/LegendToggle';
@@ -89,7 +91,17 @@ export default function App() {
                 flexDirection: 'column',
               }}
             >
-              <Grid item>
+              <Grid
+                item
+                style={{
+                  // display: 'flex',
+                  // justifyContent: 'center',
+                  // alignItems: 'center',
+                  // margin: '1em 0px',
+                  // overflow: 'hidden',
+                  position: "relative"
+                }}
+              >
                 {' '}
                 {/* first image div */}
                 <div
@@ -99,16 +111,22 @@ export default function App() {
                     alignItems: 'center',
                     margin: '1em 0px',
                     overflow: 'hidden',
+                    // position: "relative"
                   }}
                 >
                   <span>
                     <img
-                      src={hand}
+                      src={hi}
                       style={{
+                        position: "absolute",
+                        left: "-40px",
+                        top: "40px",
+                        color: 'red',
+                        zIndex: 9999,
                         // border: "3px solid white",
                         // borderRadius: 20,
-                        width: '50px',
-                        height: '50px',
+                        width: '60px',
+                        height: '60px',
                       }}
                     />
                   </span>
@@ -195,11 +213,14 @@ export default function App() {
                       height: '70px',
                     }}
                   >
-                    <Typography variant="body1">hello</Typography>
+                    <Typography variant="body1" style={{ fontSize: "0.5em" }}>hello</Typography>
 
-                    <Typography variant="body1">
-                      icon here Software Enginer
-                    </Typography>
+                    <span style={{ display: "flex", justifyContent: 'flex-start', alignItems: "center" }}>
+                      <ArrowRightAltIcon />
+                      <Typography variant="body1" style={{ fontSize: "0.5em" }}>
+                        Software Enginer
+                      </Typography>
+                    </span>
                   </div>
                 </div>
               </Grid>
@@ -214,10 +235,17 @@ export default function App() {
                     backgroundColor: '#EDF2F8',
                     width: '130px',
                     height: '85px',
+                    display: "flex",
+                    flexDirection: "column"
                   }}
                 >
-                  {/* <img src={map} style={{ width: "100px", height: "85px" }} /> */}
-                </div>{' '}
+                  <div style={{ paddingLeft: "0.5em" }}>
+                    <GitHubIcon style={{ fontSize: "2em", color: "#DADEE1" }} />
+                  </div>
+                  <div style={{ paddingRight: "0.5em", display: "flex", justifyContent: "flex-end", alignItems: "flex-end" }}>
+                    <LinkedInIcon style={{ fontSize: "2em", color: "#DADEE1" }} />
+                  </div>
+                </div>
               </Grid>
               <Grid item>
                 {' '}
@@ -236,16 +264,18 @@ export default function App() {
                       border: '1px solid gray',
                     }}
                   >
-                    <Typography
-                      variant="body1"
-                      style={{
-                        fontSize: '0.8em',
-                        color: 'black',
-                        textTransform: 'capitalize',
-                      }}
-                    >
-                      View Resume
-                    </Typography>
+                    <Link to="/resume" style={{ textDecoration: 'none' }}>
+                      <Typography
+                        variant="body1"
+                        style={{
+                          fontSize: '0.8em',
+                          color: 'black',
+                          textTransform: 'capitalize',
+                        }}
+                      >
+                        View Resume
+                      </Typography>
+                    </Link>
                   </Button>
                 </div>
               </Grid>
@@ -281,6 +311,10 @@ export default function App() {
 
             <Route path="/skills">
               <Skills />
+            </Route>
+
+            <Route path="/resume">
+              <h1>Resume route</h1>
             </Route>
 
             <Route path="*">
