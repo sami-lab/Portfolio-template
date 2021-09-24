@@ -1,22 +1,52 @@
+import { Typography, Grid } from "@mui/material";
 import React from "react";
-
+import "./skill.css";
 export default function Skills() {
+  let skillsArr = [
+    "html",
+    "css",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Redux",
+    "SASS",
+    "Material UI",
+    "Git",
+    "CI/CD",
+    "Jest",
+    "Enzyme",
+  ];
   return (
-    <div>
+    <Grid
+      container
+      direction="column"
+      alignItems="center"
+      justifyContent="center"
+    >
+      <Typography
+        variant="subtitle1"
+        style={{
+          textTransform: "uppercase",
+          color: "#555",
+        }}
+      >
+        SKILLS
+      </Typography>
       <ul class="skills__list">
-        <li class="skills__list-item btn btn--plain">HTML</li>
-        <li class="skills__list-item btn btn--plain">CSS</li>
-        <li class="skills__list-item btn btn--plain">JavaScript</li>
-        <li class="skills__list-item btn btn--plain">TypeScript</li>
-        <li class="skills__list-item btn btn--plain">React</li>
-        <li class="skills__list-item btn btn--plain">Redux</li>
-        <li class="skills__list-item btn btn--plain">SASS</li>
-        <li class="skills__list-item btn btn--plain">Material UI</li>
-        <li class="skills__list-item btn btn--plain">Git</li>
-        <li class="skills__list-item btn btn--plain">CI/CD</li>
-        <li class="skills__list-item btn btn--plain">Jest</li>
-        <li class="skills__list-item btn btn--plain">Enzyme</li>
+        {skillsArr.map((s) => (
+          <li class="skills__list-item btn btn--plain" key={s}>
+            <Typography
+              variant="subtitle1"
+              style={{
+                textTransform: "uppercase",
+                color: "#555",
+              }}
+            >
+              {s}
+            </Typography>
+          </li>
+        ))}
       </ul>
-    </div>
+    </Grid>
   );
 }
