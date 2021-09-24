@@ -67,10 +67,10 @@ export default function AppBar(props) {
       </Grid>
     </SwipeableDrawer>
   );
-  if (matchesSM) {
-    return mobile;
-  }
-  return (
+
+  return matchesSM ? (
+    mobile
+  ) : (
     <Grid
       item
       container

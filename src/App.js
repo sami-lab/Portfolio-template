@@ -15,6 +15,7 @@ import {
 import Skills from './pages/skills';
 import Project from './pages/project';
 import AppBar from './pages/AppBar';
+import Resume from './pages/resume';
 
 import profile from './assets/profile.jpg';
 import logo from './assets/ed.png';
@@ -33,7 +34,7 @@ import {
 
 export default function App() {
   const theme = useTheme();
-  const matchesSM = useMediaQuery(theme.breakpoints.down('md'));
+  const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
@@ -282,7 +283,9 @@ export default function App() {
             <Route path="/skills">
               <Skills />
             </Route>
-
+            <Route path="/resume">
+              <Resume />
+            </Route>
             <Route path="*">
               <h1>not found</h1>
             </Route>
