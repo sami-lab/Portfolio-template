@@ -10,6 +10,7 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
+  IconButton,
 } from '@mui/material';
 import Skills from './pages/skills';
 import Project from './pages/project';
@@ -21,7 +22,7 @@ import map from './assets/map.png';
 import hand from './assets/hand.gif';
 import location from './assets/location.jpg';
 import book from './assets/book.png';
-
+import LegendToggleIcon from '@mui/icons-material/LegendToggle';
 import {
   BrowserRouter as Router,
   Switch,
@@ -45,15 +46,20 @@ export default function App() {
           alignItems={matchesSM ? 'center' : undefined}
         >
           {/* logo */}
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
+          <Grid
+            style={{ width: matchesSM ? '90%' : '100%', marginTop: '0.5em' }}
+            item
+            container
+            justifyContent={matchesSM ? 'space-between' : 'center'}
+            alignItems="center"
           >
             <img src={logo} />
-          </div>
+            {matchesSM && (
+              <IconButton onClick={() => setOpenDrawer(true)}>
+                <LegendToggleIcon />
+              </IconButton>
+            )}
+          </Grid>
 
           {/* left div */}
           <div
