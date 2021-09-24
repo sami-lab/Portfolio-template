@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import ProTip from './ProTip';
-import About from './pages/about';
+import About from './component/about';
 import {
   Grid,
   Paper,
@@ -12,16 +12,16 @@ import {
   useTheme,
   IconButton,
 } from '@mui/material';
-import Skills from './pages/skills';
-import Project from './pages/project';
+import Skills from './component/skills';
+import Project from './component/project';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import AppBar from './pages/AppBar';
+import AppBar from './component/AppBar';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import Resume from './pages/resume';
+import Resume from './component/resume';
 
 import profile from './assets/profile.jpg';
-import logo from './assets/ed.png';
+import logo from './assets/Logo.svg';
 import map from './assets/map.png';
 import hi from './assets/hi.gif';
 import location from './assets/locationpin.png';
@@ -84,7 +84,7 @@ export default function App() {
                 paddingBottom: '1em',
                 boxShadow: 'rgba(100,100,111,0.2) 0px 7px 29px 0px',
                 //boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-                width: matchesSM ? '90%' : '50%',
+                width: matchesSM ? '90%' : '80%',
                 marginTop: '2em',
                 backgroundColor: '#F6F5FA',
                 display: 'flex',

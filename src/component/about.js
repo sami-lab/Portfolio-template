@@ -12,14 +12,14 @@ export default function About() {
         container
         justifyContent="center"
         alignItems="center"
-        style={{ paddingTop: matchesSM ? '2em' : '3em' }}
+        style={{ paddingTop: matchesSM ? '2em' : '4em' }}
       >
         <Grid item xs={10}>
           <Card
             style={{
               boxShadow: 'rgba(100,100,111,0.2) 0px 7px 29px 0px',
               //boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-              padding: matchesSM ? '3em 1em' : '4em 2em',
+              padding: matchesSM ? '3em 1em' : '4.5em 2em',
               backgroundColor: '#F6F5FA',
               borderRadius: 20,
             }}
