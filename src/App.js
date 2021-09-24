@@ -242,10 +242,14 @@ export default function App() {
                   }}
                 >
                   <div style={{ paddingLeft: "0.5em" }}>
-                    <GitHubIcon style={{ fontSize: "2em", color: "#DADEE1" }} />
+                    <a style={{ textDecoration: 'none' }} target="_blank" href="https://github.com/">
+                      <GitHubIcon style={{ fontSize: "2em", color: "#DADEE1" }} />
+                    </a>
                   </div>
                   <div style={{ paddingRight: "0.5em", display: "flex", justifyContent: "flex-end", alignItems: "flex-end" }}>
-                    <LinkedInIcon style={{ fontSize: "2em", color: "#DADEE1" }} />
+                    <a style={{ textDecoration: 'none' }} target="_blank" href="https://linkedin.com/">
+                      <LinkedInIcon style={{ fontSize: "2em", color: "#DADEE1" }} />
+                    </a>
                   </div>
                 </div>
               </Grid>
@@ -318,7 +322,7 @@ export default function App() {
             <Route path="/resume">
               <Resume />
             </Route>
-            
+
             <Route path="*">
               <h1>not found</h1>
             </Route>
