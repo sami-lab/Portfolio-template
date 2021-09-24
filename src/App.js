@@ -57,7 +57,7 @@ export default function App() {
             justifyContent={matchesSM ? 'space-between' : 'center'}
             alignItems="center"
           >
-            <img src={logo} />
+            <img src={logo} style={{ width: '3em', height: '2.5em' }} />
             {matchesSM && (
               <IconButton onClick={() => setOpenDrawer(true)}>
                 <LegendToggleIcon />
@@ -136,9 +136,9 @@ export default function App() {
                     src={profile}
                     style={{
                       border: '3px solid white',
-                      borderRadius: 20,
-                      width: '100px',
-                      height: '85px',
+                      borderRadius: 15,
+                      width: '120px',
+                      height: '95px',
                     }}
                   />
                 </div>
@@ -171,17 +171,17 @@ export default function App() {
                       src={location}
                       style={{
                         position: 'absolute',
-                        left: '-24px',
-                        top: '0px',
+                        left: '-25px',
+                        top: '3px',
                         color: 'red',
                         zIndex: 9999,
-                        backgroundColor: 'red',
+
                         // transform: "translateX",
                         // border: "3px solid white",
                         // borderRadius: 20,
-                        transform: 'rotate(-55deg)',
-                        width: '30px',
-                        height: '30px',
+                        // transform: 'rotate(-55deg)',
+                        width: '35px',
+                        height: '35px',
                       }}
                     />
                   </span>
@@ -189,9 +189,9 @@ export default function App() {
                     src={map}
                     style={{
                       border: '3px solid white',
-                      borderRadius: 20,
-                      width: '100px',
-                      height: '85px',
+                      borderRadius: 15,
+                      width: '120px',
+                      height: '95px',
                     }}
                   />
                 </div>
@@ -205,18 +205,25 @@ export default function App() {
                     justifyContent: 'center',
                     alignItems: 'start',
                     margin: '1em 0px',
-                    overflow: 'hidden',
+                    position: 'relative',
                   }}
                 >
                   <span>
                     <img
                       src={book}
                       style={{
+                        position: 'absolute',
+                        left: '-30px',
+                        top: '30px',
+                        color: 'red',
+                        zIndex: 9999,
+
+                        // transform: "translateX",
                         // border: "3px solid white",
                         // borderRadius: 20,
-                        width: '30px',
-                        height: '30px',
-                        marginTop: '1em',
+                        // transform: 'rotate(-55deg)',
+                        width: '25px',
+                        height: '25px',
                       }}
                     />
                   </span>
@@ -230,8 +237,8 @@ export default function App() {
                       alignItems: 'center',
                       borderRadius: 20,
                       flexDirection: 'column',
-                      width: '120px',
-                      height: '70px',
+                      width: '130px',
+                      height: '105px',
                     }}
                   >
                     <Typography variant="body1" style={{ fontSize: '0.5em' }}>
@@ -263,12 +270,12 @@ export default function App() {
                     // border: "3px solid white",
                     backgroundColor: '#EDF2F8',
                     width: '130px',
-                    height: '85px',
+                    height: '105px',
                     display: 'flex',
                     flexDirection: 'column',
                   }}
                 >
-                  <div style={{ paddingLeft: '0.5em' }}>
+                  <div style={{ paddingLeft: '0.5em', paddingTop: '0.5em' }}>
                     <a
                       style={{ textDecoration: 'none' }}
                       target="_blank"
