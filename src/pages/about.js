@@ -14,7 +14,7 @@ export default function About() {
         alignItems="center"
         style={{ paddingTop: matchesSM ? "2em" : "5em" }}
       >
-        <Grid item xs={10} md={8}>
+        <Grid item xs={10}>
           <Card
             style={{
               boxShadow: "rgba(100,100,111,0.2) 0px 7px 29px 0px",

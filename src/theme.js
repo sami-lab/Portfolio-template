@@ -21,7 +21,20 @@ const theme = createTheme({
     body2: {
       fontFamily: "Poppins",
     },
+    h3: {
+      fontFamily: "Poppins",
+      fontWeight: "900",
+      fontSize: "3rem",
+    },
     h4: {
+      fontFamily: "Poppins",
+      fontWeight: "700",
+    },
+    h5: {
+      fontFamily: "Poppins",
+      fontWeight: "800",
+    },
+    subtitle1: {
       fontFamily: "Poppins",
       fontWeight: "700",
     },
