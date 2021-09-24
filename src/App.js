@@ -19,6 +19,7 @@ export default function App() {
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
           <img src={logo} />
         </div>
+        
 
         {/* left paper */}
         <Paper style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
