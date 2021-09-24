@@ -21,6 +21,10 @@ const theme = createTheme({
     body2: {
       fontFamily: "Poppins",
     },
+    h3: {
+      fontFamily: "Poppins",
+      fontWeight: "800",
+    },
     h4: {
       fontFamily: "Poppins",
       fontWeight: "700",
