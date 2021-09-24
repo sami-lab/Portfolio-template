@@ -7,8 +7,8 @@ import ProTip from "./ProTip";
 import About from "./pages/about";
 import { Grid, Paper } from "@mui/material";
 import logo from "./assets/ed.png"
-import man from "./assets/man.png"
-import map from "./assets/man.png"
+import profile from "./assets/profile.jpg"
+import map from "./assets/map.png"
 import Skills from "./pages/skills";
 import Project from "./pages/project"
 
@@ -28,7 +28,7 @@ export default function App() {
 
           {/* first image div */}
           <Paper>
-            <img src={man} style={{ width: "90px", height: "90px" }} />
+            <img src={profile} style={{ width: "90px", height: "90px" }} />
           </Paper>
 
           {/* second image Paper */}
