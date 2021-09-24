@@ -101,7 +101,7 @@ export default function App() {
                   // alignItems: 'center',
                   // margin: '1em 0px',
                   // overflow: 'hidden',
-                  position: "relative"
+                  position: 'relative',
                 }}
               >
                 {' '}
@@ -120,9 +120,9 @@ export default function App() {
                     <img
                       src={hi}
                       style={{
-                        position: "absolute",
-                        left: "-40px",
-                        top: "40px",
+                        position: 'absolute',
+                        left: '-40px',
+                        top: '40px',
                         color: 'red',
                         zIndex: 9999,
                         // border: "3px solid white",
@@ -215,11 +215,19 @@ export default function App() {
                       height: '70px',
                     }}
                   >
-                    <Typography variant="body1" style={{ fontSize: "0.5em" }}>hello</Typography>
+                    <Typography variant="body1" style={{ fontSize: '0.5em' }}>
+                      hello
+                    </Typography>
 
-                    <span style={{ display: "flex", justifyContent: 'flex-start', alignItems: "center" }}>
+                    <span
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'flex-start',
+                        alignItems: 'center',
+                      }}
+                    >
                       <ArrowRightAltIcon />
-                      <Typography variant="body1" style={{ fontSize: "0.5em" }}>
+                      <Typography variant="body1" style={{ fontSize: '0.5em' }}>
                         Software Enginer
                       </Typography>
                     </span>
@@ -237,15 +245,24 @@ export default function App() {
                     backgroundColor: '#EDF2F8',
                     width: '130px',
                     height: '85px',
-                    display: "flex",
-                    flexDirection: "column"
+                    display: 'flex',
+                    flexDirection: 'column',
                   }}
                 >
-                  <div style={{ paddingLeft: "0.5em" }}>
-                    <GitHubIcon style={{ fontSize: "2em", color: "#DADEE1" }} />
+                  <div style={{ paddingLeft: '0.5em' }}>
+                    <GitHubIcon style={{ fontSize: '2em', color: '#DADEE1' }} />
                   </div>
-                  <div style={{ paddingRight: "0.5em", display: "flex", justifyContent: "flex-end", alignItems: "flex-end" }}>
-                    <LinkedInIcon style={{ fontSize: "2em", color: "#DADEE1" }} />
+                  <div
+                    style={{
+                      paddingRight: '0.5em',
+                      display: 'flex',
+                      justifyContent: 'flex-end',
+                      alignItems: 'flex-end',
+                    }}
+                  >
+                    <LinkedInIcon
+                      style={{ fontSize: '2em', color: '#DADEE1' }}
+                    />
                   </div>
                 </div>
               </Grid>
@@ -287,10 +304,10 @@ export default function App() {
       </Grid>
 
       {/* right bar */}
-      <Grid item lg={9}>
+      <Grid item lg={9} xs={12}>
         <AppBar openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} />
 
-        <div>
+        <div style={{ width: '100%' }}>
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
@@ -318,7 +335,7 @@ export default function App() {
             <Route path="/resume">
               <Resume />
             </Route>
-            
+
             <Route path="*">
               <h1>not found</h1>
             </Route>
