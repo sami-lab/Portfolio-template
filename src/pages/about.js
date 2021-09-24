@@ -17,7 +17,8 @@ export default function About() {
         <Grid item xs={10} md={8}>
           <Card
             style={{
-              boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+              boxShadow: "rgba(100,100,111,0.2) 0px 7px 29px 0px",
+              //boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
               padding: matchesSM ? "3em 1em" : "6em 2em",
               backgroundColor: "#F6F5FA",
               borderRadius: 20,
