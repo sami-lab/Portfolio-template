@@ -38,7 +38,7 @@ export default function About() {
               <Grid item>
                 <Grid container direction="column" spacing={4}>
                   <Grid item>
-                    <Typography variant="body2">Hello, I'm Jphnns</Typography>
+                    <Typography variant="body1">Hello, I'm Jphnns</Typography>
                   </Grid>
                   <Grid item style={{ marginLeft: "4.5em" }}>
                     <Typography variant="h4">Welcome to my World!</Typography>
