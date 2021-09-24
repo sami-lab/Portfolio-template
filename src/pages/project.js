@@ -33,7 +33,18 @@ export default function Project() {
       style={{ paddingTop: matchesSM ? "2em" : "5em" }}
       spacing={3}
     >
-      <Grid item></Grid>
+      <Grid item>
+        <Typography
+          variant="h3"
+          style={{
+            textTransform: "uppercase",
+            color: "#444444",
+            lineHeight: 1.2,
+          }}
+        >
+          PROJECTS
+        </Typography>
+      </Grid>
       <Grid item container justifyContent="center">
         <Grid item xs={10}>
           <Grid container spacing={2}>
