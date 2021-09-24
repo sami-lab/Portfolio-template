@@ -30,6 +30,10 @@ const theme = createTheme({
       fontFamily: "Poppins",
       fontWeight: "700",
     },
+    h5: {
+      fontFamily: "Poppins",
+      fontWeight: "800",
+    },
     subtitle1: {
       fontFamily: "Poppins",
       fontWeight: "700",
