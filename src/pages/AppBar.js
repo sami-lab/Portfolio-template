@@ -1,6 +1,13 @@
 import React from "react";
 import { Card, Grid, Typography, useTheme, useMediaQuery } from "@mui/material";
 
+import {
+  // BrowserRouter as Router,
+  // Switch,
+  // Route,
+  Link
+} from "react-router-dom";
+
 import Man from "../assets/man.jpg";
 export default function AppBar() {
   const theme = useTheme();
@@ -63,7 +70,8 @@ export default function AppBar() {
               }}
             >
               <Typography variant="body1">
-                About
+                <Link to="/about" style={{ textDecoration: "none" }}>About</Link>
+                {/* About */}
               </Typography>
             </Card>
 
@@ -83,7 +91,8 @@ export default function AppBar() {
               }}
             >
               <Typography>
-                Project
+                <Link to="/project" style={{ textDecoration: "none" }}>Project</Link>
+
               </Typography>
             </Card>
 
@@ -103,7 +112,7 @@ export default function AppBar() {
               }}
             >
               <Typography>
-                Skills
+                <Link to="/skills" style={{ textDecoration: "none" }}>Skills</Link>
               </Typography>
             </Card>
 

@@ -1,7 +1,6 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
 import ProTip from "./ProTip";
 import About from "./pages/about";
 import { Grid, Paper, Button, Typography } from "@mui/material";
@@ -15,6 +14,14 @@ import map from "./assets/map.png"
 import hand from "./assets/hand.gif"
 import location from "./assets/location.jpg"
 import book from "./assets/book.png"
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+  Link
+} from "react-router-dom";
 
 export default function App() {
   return (
@@ -202,12 +209,44 @@ export default function App() {
         item
         lg={9}
       >
-        <AppBar />
-        <About />
-        <Skills />
-        <Project />
-      </Grid>
 
+        <AppBar />
+
+        <div>
+          {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+          <Switch>
+
+            <Route path="/" exact>
+              <Redirect
+                to={{
+                  pathname: "/about",
+                  // state: { from: location }
+                }}
+              />
+            </Route>
+
+            <Route path="/about">
+              <About />
+            </Route>
+
+            <Route path="/project">
+              <Project />
+            </Route>
+
+            <Route path="/skills">
+              <Skills />
+            </Route>
+
+            <Route path="*">
+              <h1>
+                not found
+              </h1>
+            </Route>
+          </Switch>
+        </div>
+
+      </Grid>
     </Grid>
   )
 }
