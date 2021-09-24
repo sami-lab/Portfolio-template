@@ -7,9 +7,5 @@ import ProTip from "./ProTip";
 import About from "./pages/about";
 
 export default function App() {
-  return (
-    <Container maxWidth="sm">
-      <About />
-    </Container>
-  );
+  return <About />;
 }
