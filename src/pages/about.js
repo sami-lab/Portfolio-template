@@ -48,7 +48,7 @@ export default function About() {
                       variant="body2"
                       color="#2978B5"
                       style={{
-                        width: matchesSM ? "80%" : "40%",
+                        width: matchesSM ? "80%" : "50%",
                         marginTop: "2em",
                       }}
                     >

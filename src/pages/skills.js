@@ -42,9 +42,12 @@ export default function Skills() {
       </Grid>
       <Grid item container justifyContent="center">
         <Grid item xs={6}>
-          <ul class="skills__list">
+          <ul
+            className="skills__list"
+            style={{ padding: matchesSM ? 0 : "0.8em 1.4em" }}
+          >
             {skillsArr.map((s) => (
-              <li class="skills__list-item btn btn--plain" key={s}>
+              <li className="skills__list-item btn btn--plain" key={s}>
                 <Typography
                   variant="subtitle1"
                   style={{

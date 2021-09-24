@@ -1,0 +1,8 @@
+.card {
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.card:hover {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
