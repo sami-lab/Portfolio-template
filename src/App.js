@@ -184,8 +184,8 @@ export default function App() {
               // border: "3px solid white"
             }}
             >
-              <Button style={{ backgroundColor: "white" }}>
-                <Typography variant="body1">
+              <Button style={{ backgroundColor: "white", border: "1px solid gray", }}>
+                <Typography variant="body1" style={{ fontSize: "0.8em", color: "black", textTransform: "capitalize" }}>
                   View Resume
                 </Typography>
               </Button>
