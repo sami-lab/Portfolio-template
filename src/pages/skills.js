@@ -26,34 +26,38 @@ export default function Skills() {
       alignItems="center"
       justifyContent="center"
       style={{ paddingTop: matchesSM ? "2em" : "5em" }}
+      spacing={3}
     >
       <Grid item>
         <Typography
-          variant="h4"
+          variant="h3"
           style={{
             textTransform: "uppercase",
             color: "#444444",
+            lineHeight: 1.2,
           }}
         >
           SKILLS
         </Typography>
       </Grid>
-      <Grid item xs={6}>
-        <ul class="skills__list">
-          {skillsArr.map((s) => (
-            <li class="skills__list-item btn btn--plain" key={s}>
-              <Typography
-                variant="subtitle1"
-                style={{
-                  textTransform: "uppercase",
-                  color: "#555",
-                }}
-              >
-                {s}
-              </Typography>
-            </li>
-          ))}
-        </ul>
+      <Grid item container justifyContent="center">
+        <Grid item xs={6}>
+          <ul class="skills__list">
+            {skillsArr.map((s) => (
+              <li class="skills__list-item btn btn--plain" key={s}>
+                <Typography
+                  variant="subtitle1"
+                  style={{
+                    textTransform: "uppercase",
+                    color: "#555",
+                  }}
+                >
+                  {s}
+                </Typography>
+              </li>
+            ))}
+          </ul>
+        </Grid>
       </Grid>
     </Grid>
   );
