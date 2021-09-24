@@ -9,6 +9,8 @@ import { Grid, Paper } from "@mui/material";
 import logo from "./assets/ed.png"
 import man from "./assets/man.png"
 import map from "./assets/man.png"
+import Skills from "./pages/skills";
+import Project from "./pages/project"
 
 export default function App() {
   return (
@@ -19,7 +21,7 @@ export default function App() {
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
           <img src={logo} />
         </div>
-        
+
 
         {/* left paper */}
         <Paper style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
@@ -42,6 +44,8 @@ export default function App() {
       <Grid item lg={9}>
 
         <About />
+        <Skills />
+        <Project />
       </Grid>
 
     </Grid>
