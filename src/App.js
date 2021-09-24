@@ -7,6 +7,7 @@ import About from "./pages/about";
 import { Grid, Paper, Button, Typography } from "@mui/material";
 import Skills from "./pages/skills";
 import Project from "./pages/project"
+import AppBar from "./pages/AppBar"
 
 import profile from "./assets/profile.jpg"
 import logo from "./assets/ed.png"
@@ -198,7 +199,7 @@ export default function App() {
 
       {/* right bar */}
       <Grid item lg={9}>
-
+        <AppBar />
         <About />
         <Skills />
         <Project />
