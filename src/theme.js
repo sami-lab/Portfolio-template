@@ -15,6 +15,9 @@ const theme = createTheme({
     },
   },
   typography: {
+    body1: {
+      fontFamily: "Poppins",
+    },
     body2: {
       fontFamily: "Poppins",
     },
