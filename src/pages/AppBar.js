@@ -10,11 +10,28 @@ export default function AppBar() {
       <Grid
         item
         container
-        justifyContent="center"
-        alignItems="center"
-        style={{ paddingTop: matchesSM ? "2em" : "2em" }}
+        justifyContent="end"
+
+        // alignItems="center"
+        style={{
+          paddingRight: !matchesSM && "8em",
+          paddingTop: matchesSM ? "2em" : "2em",
+          // border: "2px solid blue",
+          display: "flex",
+          // justifyContent: "flex-end"
+        }}
       >
-        <Grid item xs={10} md={8}>
+        <Grid
+          item
+          xs={10}
+          md={8}
+          style={{
+            // border: "2px solid blue",
+            // display: "flex",
+            // justifyContent: "center",
+            // alignItems: "center"
+          }}
+        >
           <Card
             style={{
               boxShadow: "rgba(100,100,111,0.2) 0px 7px 29px 0px",
@@ -30,11 +47,13 @@ export default function AppBar() {
             {/* first card */}
             <Card
               style={{
+                cursor: "pointer",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 width: "16%",
-                boxShadow: "rgba(100,100,111,0.2) 0px 7px 29px 0px",
+                boxShadow: "9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px  rgba(255,255,255, 0.5)",
+                // boxShadow: "rgba(100,100,111,0.2) 0px 7px 29px 0px",
                 //boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
                 padding: matchesSM ? "3em 1em" : "0.2em 0",
                 backgroundColor: "#F6F5FA",
@@ -49,6 +68,7 @@ export default function AppBar() {
             {/* second card */}
             <Card
               style={{
+                cursor: "pointer",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -68,6 +88,7 @@ export default function AppBar() {
             {/* third card */}
             <Card
               style={{
+                cursor: "pointer",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -87,6 +108,6 @@ export default function AppBar() {
           </Card>
         </Grid>
       </Grid>
-    </Grid>
+    </Grid >
   );
 }

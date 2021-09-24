@@ -198,7 +198,10 @@ export default function App() {
       </Grid>
 
       {/* right bar */}
-      <Grid item lg={9}>
+      <Grid
+        item
+        lg={9}
+      >
         <AppBar />
         <About />
         <Skills />
