@@ -36,7 +36,7 @@ export default function Skills() {
               direction="column"
               alignItems="center"
               justifyContent="center"
-              spacing={3}
+              spacing={2}
             >
               <Grid item>
                 <Typography
@@ -51,7 +51,7 @@ export default function Skills() {
                 </Typography>
               </Grid>
               <Grid item container justifyContent="center">
-                <Grid item xs={8}>
+                <Grid item xs={7}>
                   <ul
                     className="skills__list"
                     style={{ padding: matchesSM ? 0 : '0.4em 1.4em' }}

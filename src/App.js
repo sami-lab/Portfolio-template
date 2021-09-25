@@ -77,7 +77,10 @@ export default function App() {
           >
             <Grid
               container
-              direction={matchesSM ? 'row' : 'column'}
+              direction={'column'}
+              justifyContent="center"
+              alignItems="center"
+              spacing={4}
               elevation={0}
               style={{
                 borderRadius: 20,
@@ -87,10 +90,6 @@ export default function App() {
                 width: matchesSM ? '90%' : '80%',
                 marginTop: '2em',
                 backgroundColor: '#F6F5FA',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                flexDirection: 'column',
               }}
             >
               <Grid
@@ -111,7 +110,6 @@ export default function App() {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    margin: '1em 0px',
                     overflow: 'hidden',
                     // position: "relative"
                   }}
@@ -121,7 +119,7 @@ export default function App() {
                       src={hi}
                       style={{
                         position: 'absolute',
-                        left: '-40px',
+                        left: '-10px',
                         top: '40px',
                         color: 'red',
                         zIndex: 9999,
@@ -137,7 +135,7 @@ export default function App() {
                     style={{
                       border: '3px solid white',
                       borderRadius: 15,
-                      width: '120px',
+                      width: '130px',
                       height: '95px',
                     }}
                   />
@@ -161,7 +159,6 @@ export default function App() {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    margin: '1em 0px',
                     overflow: 'hidden',
                     // position: "relative"
                   }}
@@ -171,8 +168,8 @@ export default function App() {
                       src={location}
                       style={{
                         position: 'absolute',
-                        left: '-25px',
-                        top: '3px',
+                        left: '3px',
+                        top: '20px',
                         color: 'red',
                         zIndex: 9999,
 
@@ -190,7 +187,7 @@ export default function App() {
                     style={{
                       border: '3px solid white',
                       borderRadius: 15,
-                      width: '120px',
+                      width: '130px',
                       height: '95px',
                     }}
                   />
@@ -204,7 +201,6 @@ export default function App() {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'start',
-                    margin: '1em 0px',
                     position: 'relative',
                   }}
                 >
@@ -237,7 +233,7 @@ export default function App() {
                       alignItems: 'center',
                       borderRadius: 20,
                       flexDirection: 'column',
-                      width: '130px',
+                      width: '140px',
                       height: '105px',
                     }}
                   >
@@ -264,12 +260,11 @@ export default function App() {
                 {/* fourth image div */}
                 <div
                   style={{
-                    margin: '1em 0px',
                     borderRadius: 20,
                     overflow: 'hidden',
                     // border: "3px solid white",
                     backgroundColor: '#EDF2F8',
-                    width: '130px',
+                    width: '140px',
                     height: '105px',
                     display: 'flex',
                     flexDirection: 'column',
@@ -310,12 +305,13 @@ export default function App() {
                 {' '}
                 {/* bottom button */}
                 <div
-                  style={{
-                    marginTop: '1em',
-                    // borderRadius: 20,
-                    // overflow: "hidden",
-                    // border: "3px solid white"
-                  }}
+                  style={
+                    {
+                      // borderRadius: 20,
+                      // overflow: "hidden",
+                      // border: "3px solid white"
+                    }
+                  }
                 >
                   <Button
                     style={{

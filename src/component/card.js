@@ -13,6 +13,9 @@ export default function CustomCard(props) {
         padding: matchesSM ? '3em 1em' : '5em 4em',
         backgroundColor: '#F6F5FA',
         borderRadius: 20,
+        minHeight: '520px',
+        height: '520px',
+        ...props.style,
       }}
     >
       {props.children}
