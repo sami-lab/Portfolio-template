@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Grid, Typography, useTheme, useMediaQuery } from '@mui/material';
 
 import Man from '../assets/man.jpg';
+import CustomCard from './card';
 export default function About() {
   const theme = useTheme();
   const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
@@ -12,18 +13,10 @@ export default function About() {
         container
         justifyContent="center"
         alignItems="center"
-        style={{ paddingTop: matchesSM ? '2em' : '4em' }}
+        style={{ paddingTop: matchesSM ? '2em' : '3em' }}
       >
         <Grid item xs={10}>
-          <Card
-            style={{
-              boxShadow: 'rgba(100,100,111,0.2) 0px 7px 29px 0px',
-              //boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-              padding: matchesSM ? '3em 1em' : '4.5em 2em',
-              backgroundColor: '#F6F5FA',
-              borderRadius: 20,
-            }}
-          >
+          <CustomCard>
             {/* Main row */}
             <Grid
               container
@@ -61,7 +54,7 @@ export default function About() {
                 </Grid>
               </Grid>
             </Grid>
-          </Card>
+          </CustomCard>
         </Grid>
       </Grid>
     </Grid>

@@ -7,6 +7,7 @@ import {
   Card,
   Button,
 } from '@mui/material';
+import CustomCard from './card';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import './project.css';
@@ -43,18 +44,10 @@ export default function Project() {
         container
         justifyContent="center"
         alignItems="center"
-        style={{ paddingTop: matchesSM ? '2em' : '2em' }}
+        style={{ paddingTop: matchesSM ? '2em' : '3em' }}
       >
         <Grid item xs={10}>
-          <Card
-            style={{
-              boxShadow: 'rgba(100,100,111,0.2) 0px 7px 29px 0px',
-              //boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-              padding: matchesSM ? '3em 1em' : '3.8em 4em',
-              backgroundColor: '#F6F5FA',
-              borderRadius: 20,
-            }}
-          >
+          <CustomCard>
             <Grid container justifyContent="space-between" alignItems="center">
               <Grid item xs={6}>
                 <Grid container spacing={2}>
@@ -165,7 +158,7 @@ export default function Project() {
                 </a>
               </Button>
             </Grid>
-          </Card>
+          </CustomCard>
         </Grid>
       </Grid>
     </Grid>
